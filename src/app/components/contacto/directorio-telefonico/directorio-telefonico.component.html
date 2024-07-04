@@ -1,0 +1,47 @@
+<section>
+    <div class="container">
+        <h2 class="sectionTitle text-center mb-4">Directorio Telefónico</h2>
+
+        <div class="descripcion">
+            <h3> +593 03 2779217</h3>
+            <h5>La actualización del Directorio Telefónico está a cargo de las
+                secretarias de cada Dirección</h5>
+        </div>
+
+
+
+        <table class="table table-bordered bordes">
+            <thead>
+                <tr>
+                    <th>Departamento</th>
+                    <th>Teléfono Institucional</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let telefono of telefonosDep">
+                <tr>
+                    <td>{{ telefono.departamento}}</td>
+                    <td> +593 03 {{ telefono.telefono }}</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+        <table class="table table-bordered bordes">
+            <thead>
+                <tr>
+                    <th>Unidad</th>
+                    <th>Extensión</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let extension of ext">
+                <tr>
+                    <td>{{ extension.unidad}}</td>
+                    <td>{{ extension.extension }}</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+</section>

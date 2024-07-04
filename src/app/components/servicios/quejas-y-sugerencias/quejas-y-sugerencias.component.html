@@ -1,0 +1,113 @@
+<section>
+    <div class="container">
+        <h2 class="sectionTitle text-center mb-4">Buzón de Quejas y Sugerencias</h2>
+
+        <span>Estimado usuario le agradecemos la gentileza y el tiempo que se tomará para poder apoyarnos en servirle
+            mejor. Para que su petición quede formalizada, le solicitamos llenar la siguiente información. Favor
+            ingresar datos verídicos y correctos.</span>
+
+
+        <div class="py-5">
+            <div class="card" style="width: 100%;">
+                <div class="card-header">Datos de contacto</div>
+                <div class="py-5 px-5">
+
+                    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label for="validationDepartamento" class="form-label">Departamento *</label>
+                            <select class="form-select" id="validationDepartamento" formControlName="departamento"
+                                required
+                                [ngClass]="{ 'is-invalid': form.get('departamento')?.invalid && form.get('departamento')?.touched, 'is-valid': form.get('departamento')?.valid && form.get('departamento')?.touched }">
+                                <option selected disabled value="">Elige un departamento</option>
+                                <option>Biblioteca Yanahurco</option>
+                                <option>Planta de Balanceados</option>
+                                <option>Frente Sur Occidental</option>
+                                <option>Edificio Principal</option>
+                                <option>La Estación – Turismo</option>
+                            </select>
+                            <div *ngIf="form.get('departamento')?.invalid && form.get('departamento')?.touched"
+                                class="invalid-feedback">
+                                Por favor selecciona un departamento.
+                            </div>
+                            <div *ngIf="form.get('departamento')?.valid && form.get('departamento')?.touched"
+                                class="valid-feedback">
+                                Campo correcto.
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="validationCedula" class="form-label">Cédula *</label>
+                            <input type="text" class="form-control" id="validationCedula" formControlName="cedula"
+                                placeholder="1234567890" required
+                                [ngClass]="{ 'is-invalid': form.get('cedula')?.invalid && form.get('cedula')?.touched, 'is-valid': form.get('cedula')?.valid && form.get('cedula')?.touched }">
+                            <div *ngIf="form.get('cedula')?.invalid && form.get('cedula')?.touched"
+                                class="invalid-feedback">
+                                La cédula no es correcta.
+                            </div>
+                            <div *ngIf="form.get('cedula')?.valid && form.get('cedula')?.touched"
+                                class="valid-feedback">
+                                Campo correcto.
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="validationNombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="validationNombre" formControlName="nombre">
+                            <div class="valid-feedback">
+                                Campo correcto.
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="validationApellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="validationApellido" formControlName="apellido">
+                            <div class="valid-feedback">
+                                Campo correcto.
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="validationCorreo" class="form-label">Correo *</label>
+                            <input type="email" class="form-control" id="validationCorreo" formControlName="correo"
+                                placeholder="nombre@ejemplo.com" required
+                                [ngClass]="{ 'is-invalid': form.get('correo')?.invalid && form.get('correo')?.touched, 'is-valid': form.get('correo')?.valid && form.get('correo')?.touched }">
+                            <div *ngIf="form.get('correo')?.invalid && form.get('correo')?.touched"
+                                class="invalid-feedback">
+                                El correo no tiene el formato correcto.
+                            </div>
+                            <div *ngIf="form.get('correo')?.valid && form.get('correo')?.touched"
+                                class="valid-feedback">
+                                Campo correcto.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="validationTextarea" class="form-label">Sugerencia</label>
+                            <textarea class="form-control" id="validationTextarea"
+                                placeholder="Escriba aquí su sugerencia" formControlName="queja" required
+                                [ngClass]="{ 'is-invalid': form.get('queja')?.invalid && form.get('queja')?.touched, 'is-valid': form.get('queja')?.valid && form.get('queja')?.touched }"></textarea>
+                            <div *ngIf="form.get('queja')?.invalid && form.get('queja')?.touched"
+                                class="invalid-feedback">
+                                Este campo es obligatorio.
+                            </div>
+                            <div *ngIf="form.get('queja')?.valid && form.get('queja')?.touched" class="valid-feedback">
+                                Campo correcto.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Enviar Información</button>
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+</section>

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif; /* Aplica Poppins como la fuente principal */
+}
+
+.sectionTitle {
+    position: relative;
+    text-align: center;
+  }
+  
+  .sectionTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; /* Ajusta la distancia de la línea con el título */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Ajusta la longitud de la línea */
+    height: 5px; /* Ajusta el grosor de la línea */
+    background-color: #51775e;
+    border-radius: 10px; /* Redondea las esquinas de la línea */
+  }
+
+.banner{
+    padding-top: 56px;
+}
+img{
+    width: fit-content;
+    height: fit-content;
+}
+p {
+    text-align: justify;
+}
+.historia{
+    padding: 56px;
+}
+
+.sectionTitle{
+
+    padding-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .img-fluid {
+        max-width: 100%;
+        margin: auto;
+        display: block;
+    }
+}
+/* animacion banner */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.fade-in {
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fade-in-up {
+    animation: fadeInUp 3s ease-in-out;
+}
