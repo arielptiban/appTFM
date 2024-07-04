@@ -2,5 +2,38 @@
     <div class="container">
         <h2 class="sectionTitle text-center mb-4">Transportes</h2>
 
+        <span class="d-flex justify-content-center">Estimado usuario le informamos que los horarios mostrados están
+            sujetas a cambios sin previo aviso.
+        </span>
+        <span class="d-flex justify-content-center">Asegúrate de verificar la información con las cooperativas
+            correspondientes.
+        </span>
+
+        <div class="mapa" *ngIf="mapLoaded">
+            <google-map height="400px" width="100%" [center]="center" [zoom]="zoom">
+                <map-marker *ngFor="let location of locations" [position]="location" [icon]="location.icon">
+                </map-marker>
+            </google-map>
+        </div>
+        <div class="">
+            <table class="table table-bordered bordes">
+                <thead>
+                    <tr>
+                        <th>Departamento</th>
+                        <th>Teléfono Institucional</th>
+                        <th>Dirección</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let telefono of telefonosDep">
+                    <tr>
+                        <td>{{ telefono.coop}}</td>
+                        <td> {{ telefono.telefono }}</td>
+                        <td> <img src="{{telefono.icon}}" alt=""> {{ telefono.direccion }}</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
     </div>
 </section>

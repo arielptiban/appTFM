@@ -21,7 +21,10 @@
     background-color: #51775e;
     border-radius: 10px; 
 }
-
+span{
+    opacity: .5;
+    text-align: center;
+}
 section{
     padding: 56px;
 }
