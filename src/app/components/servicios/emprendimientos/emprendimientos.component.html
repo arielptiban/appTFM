@@ -2,7 +2,7 @@
     <div class="container">
         <h2 class="sectionTitle text-center mb-4">Emprendimientos</h2>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col" *ngFor="let card of paginatedCards">
                 <div class="card h-100">
                     <img [src]="card.img" class="card-img-top" alt="...">
@@ -11,9 +11,7 @@
                         <p class="card-text">{{ card.texto }}</p>
                     </div>
                     <div class="card-footer  d-flex justify-content-between align-items-center">
-                        <small class="text-body-secondary">{{ card.fecha }}</small>
                         <a href="#" class="btn btn-link">Ver más &rarr;</a>
-
                     </div>
                 </div>
             </div>

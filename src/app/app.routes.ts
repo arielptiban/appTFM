@@ -11,6 +11,7 @@ import { DirectorioTelefonicoComponent } from './components/contacto/directorio-
 import { HorarioAtencionComponent } from './components/contacto/horario-atencion/horario-atencion.component';
 import { QuejasYSugerenciasComponent } from './components/servicios/quejas-y-sugerencias/quejas-y-sugerencias.component';
 import { EmprendimientosComponent } from './components/servicios/emprendimientos/emprendimientos.component';
+import { TransportesComponent } from './components/servicios/transportes/transportes.component';
 
 export const routes: Routes = [
     { path: "Inicio", component: HomeComponent },
@@ -24,6 +25,7 @@ export const routes: Routes = [
     //Servicios
     { path: "quejas-y-sugerencias", component: QuejasYSugerenciasComponent },
     { path: "emprendimientos", component: EmprendimientosComponent },
+    { path: "transportes", component: TransportesComponent },
     //Comunicacion
     { path: "ultimas-noticas", component: UltimasNoticiasComponent },
     { path: "galeria-imagenes", component: GaleriaImagenesComponent },

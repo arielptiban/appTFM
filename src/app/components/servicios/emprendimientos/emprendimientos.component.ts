@@ -15,64 +15,52 @@ export class EmprendimientosComponent {
 
   cards = [
     {
-      titulo: 'Adquisición de equipos de computo',
-      texto: 'El alcalde de la ciudad gestiona computadoras para apoyar la educación en el cantón.',
-      fecha: '28 de junio de 2024',
-      img: '../../../../assets/img/boletin1(1).webp',
+      titulo: 'Ferrocomercio Palacios',
+      texto: 'Más que una ferretería es el resultado de un sueño.',
+      info: '28 de junio de 2024',
+      img: '../../../../assets/img/emprendimiento1.webp',
     },
     {
-      titulo: 'Visita inclusiva del Centro Diurno',
-      texto: 'El Centro Diurno de la ciudad, junto a sus técnicos, realizaron una visita a la FAE en Ambato',
-      fecha: '21 de junio de 2024',
-      img: '../../../../assets/img/boletin2(1).webp',
+      titulo: 'MoyanCalza',
+      texto: 'Calidad y comodidad para sus pies, con precios accesibles a partir de 10 dólares.',
+      info: '21 de junio de 2024',
+      img: '../../../../assets/img/emprendimiento2.webp',
     },
     {
-      titulo: 'Acciones conjuntas en Mocha',
-      texto: 'Se ha llevado a cabo trabajos complementarios en la pintura de la cancha Escuela Costa Rica, en la parroquia Pinguilí.',
-      fecha: '20 de junio de 2024',
-      img: '../../../../assets/img/boleytin3.webp',
+      titulo: 'Tupac Tambu',
+      texto: 'Paradero gastronómico y turístico.',
+      info: '20 de junio de 2024',
+      img: '../../../../assets/img/emprendimiento3.webp',
     },
     {
-      titulo: 'Trabajos de limpieza culminan',
-      texto: 'Los trabajos de limpieza debido a las fuertes lluvias culminaron este miércoles.',
-      fecha: '19 de junio de 2024',
-      img: '../../../../assets/img/boletin4.webp',
+      titulo: 'Agrovil',
+      texto: 'La empresa que revoluciona la crianza de cuyes en Tungurahua.',
+      info: '19 de junio de 2024',
+      img: '../../../../assets/img/emprendimiento4.webp',
     },
     {
-      titulo: 'Emergencias en la provincia',
-      texto: 'El COE Provincial de Tungurahua se reunió en Baños para abordar emergencias en la provincia.',
-      fecha: '19 de junio de 2024',
-      img: '../../../../assets/img/boletin5.webp',
+      titulo: 'Valparaiso',
+      texto: 'El dulce sabor de la miel.',
+      info: '19 de junio de 2024',
+      img: '../../../../assets/img/emprendimiento5.webp',
     },
     {
-      titulo: 'Rebacheo de vías',
-      texto: 'El GAD Municipal, en coordinación con el Gobierno Provincial de Tungurahua, está trabajando en el rebacheo de vías en varios sectores del cantón Mocha.',
-      fecha: '18 de junio de 2024',
-      img: '../../../../assets/img/boletin6.webp',
+      titulo: 'Calzado Edumaster',
+      texto: 'Materiales de calidad, buenos cueros y ofrece precios accesibles, directos del productor al consumidor.',
+      info: '18 de junio de 2024',
+      img: '../../../../assets/img/emprendimiento6.webp',
     },
     {
-      titulo: 'Talleres para erradicar la violencia',
-      texto: 'Diversas instituciones se unieron en Mocha para llevar a cabo un taller sobre cómo actuar en situaciones de violencia.',
-      fecha: '14 de junio de 2024',
-      img: '../../../../assets/img/boletin7.webp',
+      titulo: 'Cevichochos de Doña Anita',
+      texto: 'Saludable, delicioso y nutritivo.',
+      info: '14 de junio de 2024',
+      img: '../../../../assets/img/emprendimiento7.webp',
 
-    },
-    {
-      titulo: 'Proyecto "Creando Sueños"',
-      texto: 'Proyecto que abre oportunidades para los emprendedores con discapacidad en Mocha.',
-      fecha: '13 de junio de 2024',
-      img: '../../../../assets/img/boletin8.webp',
-    },
-    {
-      titulo: 'Impulso de la producción orgánica en el cantón',
-      texto: 'Paul King, experto en Nanotecnología, propuso un plan piloto para transformar la producción agrícola en Mocha.',
-      fecha: '12 de junio de 2024',
-      img: '../../../../assets/img/boletin9.webp',
     },
   ]
 
   currentPage = 1;
-  itemsPerPage = 6;
+  itemsPerPage = 4;
   totalPages: number;
 
   constructor() {
