@@ -451,7 +451,8 @@ import {
   ɵɵvalidateIframeAttribute,
   ɵɵviewQuery,
   ɵɵviewQuerySignal
-} from "./chunk-2U4BRH7B.js";
+} from "./chunk-PGI6UN2G.js";
+import "./chunk-XAACGAK5.js";
 import "./chunk-WKYGNSYM.js";
 export {
   ANIMATION_MODULE_TYPE,

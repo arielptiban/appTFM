@@ -21,7 +21,7 @@ export const routes: Routes = [
     { path: "alcalde", component: AlcaldeComponent },
     // Transparencia
     { path: "ley-de-transparencia", component: LeydetransparenciaComponent },
-    { path: "transparencia", component: TrasnparenciaAnioComponent },
+    { path: "transparencia/:titulo", component: TrasnparenciaAnioComponent, data: { title: 'Transparencia' } },
     //Servicios
     { path: "quejas-y-sugerencias", component: QuejasYSugerenciasComponent },
     { path: "emprendimientos", component: EmprendimientosComponent },
