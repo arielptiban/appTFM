@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { NavigationExtras, Router } from '@angular/router';
 
 @Component({
   selector: 'app-ultimas-noticias',
@@ -21,7 +22,7 @@ export class UltimasNoticiasComponent {
     },
     {
       titulo: 'Visita inclusiva del Centro Diurno',
-      texto: 'El Centro Diurno de la ciudad, junto a sus técnicos, realizaron una visita a la FAE en Ambato',
+      texto: 'El Centro Diurno de la ciudad, junto a sus técnicos, realizaron una visita a la FAE en Ambato.',
       fecha: '21 de junio de 2024',
       img: '../../../../assets/img/boletin2(1).webp',
     },
@@ -74,7 +75,7 @@ export class UltimasNoticiasComponent {
   itemsPerPage = 6;
   totalPages: number;
 
-  constructor() {
+  constructor(private router: Router) {
     this.totalPages = Math.ceil(this.cards.length / this.itemsPerPage);
   }
 
@@ -87,4 +88,5 @@ export class UltimasNoticiasComponent {
   setPage(page: number) {
     this.currentPage = page;
   }
+
 }

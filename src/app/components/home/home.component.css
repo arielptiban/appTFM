@@ -6,7 +6,6 @@
   position: relative;
   text-align: center;
 }
-
 .sectionTitle::after {
   content: '';
   position: absolute;
@@ -19,29 +18,37 @@
   border-radius: 10px; /* Redondea las esquinas de la línea */
 }
 .banner img{
-    padding-top: 56px;
+  padding-top: 56px;
 }
 
-.news-feed .title{
-    padding-top: 30px;
+.news-feed{
+  padding-top: 30px;
 }
-.news-feed .card{
-    padding-top: 30px;
+.announces{
+  background-color:  #f4f4f4 ;
+  padding-top: 30px;
+}  
+.enlaces{
+  padding-top: 30px;
+  padding-bottom: 30px;
+
 }
-.news-feed .no-border-radius {
-    border-radius: 0 !important;
-}
-.news-feed .link-noticia{
-    text-decoration: none;
-    color: black;
-}
-.news-feed .link-noticia:hover{
-    text-decoration: underline;
-    color: #51775e;
+.trasportes{
+  background-color:  #f4f4f4 ;
+  padding-top: 30px;
 }
 
-p, h6{
-  text-align: justify;
+.card-img-top {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.btn{
+  color: #51775e;
+}
+.btn-secondary{
+  color: white;
+  width: 20%;
 }
 
 .carousel{
@@ -67,3 +74,121 @@ p, h6{
   .carousel-control-next:hover {
     background-color:  #7c9c8c ;
   }
+
+.imgEnlace{
+  height: 100px;
+  width: auto;
+}
+
+.trasportes{
+  padding-bottom: 30px;
+  h5{
+    opacity: .9;
+    color: #51775e;
+  }
+}
+
+.trasportes img{
+  height: 400px;
+  width: auto;
+}
+
+.btn-success{
+  background-color:   #51775e;
+}
+.btn-success:hover{
+  background-color:  #5b8669;
+  transition: ease-in .2s;
+}
+
+@media (max-width: 481px) {
+  .trasportes {
+    text-align: left; 
+    span {
+      font-size: 10px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block; 
+      margin: 0 auto; 
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .container {
+    width: 100%;
+    text-align: center; 
+  }
+
+  .col-6 {
+    width: 100%; 
+  }
+
+  h5 {
+    text-align: left; 
+  }
+
+  p {
+    width: 100%;
+    text-align: left; 
+  }
+
+  .btn {
+    display: block;
+    margin: 0 auto; /* Centra el botón */
+    width: 50%;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+
+  .trasportes {
+    text-align: left; 
+    span {
+      font-size: 10px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block; 
+      margin: 0 auto; 
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .container {
+    width: 100%;
+    text-align: center; 
+  }
+
+  .col-6 {
+    width: 100%; 
+  }
+
+  h5 {
+    text-align: left; 
+  }
+
+  p {
+    width: 100%;
+    text-align: left; 
+  }
+
+  .btn {
+    display: block;
+    margin: 0 auto; /* Centra el botón */
+    width: 50%;
+  }
+}

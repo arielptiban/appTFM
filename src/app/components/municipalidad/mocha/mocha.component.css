@@ -72,6 +72,48 @@
     box-shadow: 0 0 0 4px rgba(81, 119, 94, 1);
     transition: .2s ease-in;
 }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.fade-in-text {
+    opacity: 0;
+    animation: fadeInText 1.5s ease-in-out forwards;
+    animation-delay: 1;
+}
+@keyframes fadeInYear {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.fade-in-year {
+    opacity: 0;
+    animation: fadeInYear 1.5s ease-in-out forwards;
+    animation-delay: 1;
+}
 
 /* @media (min-width: 481px) and (max-width: 767px) {
 
