@@ -1,0 +1,25 @@
+|- node_modules
+|- src
+    |- app
+        |- app.component.css
+        |- app.component.html
+        |- app.component.spec.ts
+        |- app.component.ts
+        |- app.config.ts
+        |- app.routes.ts
+        |- components
+            |- comunicacion
+            |- contacto 
+            |- home
+            |- municipalidad
+            |- servicios
+            |- shared     
+            |- transparencia
+        |- assets
+        |- index.html
+        |- main.ts
+        |- styles.css
+|- tsconfig.app.json
+|- tsconfig.json
+|- tsconfig.spec.json
+```
