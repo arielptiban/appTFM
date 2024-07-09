@@ -21,7 +21,17 @@
     background-color: #51775e;
     border-radius: 10px; 
 }
-
 section{
     padding: 56px;
+}
+
+.accordion-button{
+    color:rgba(81, 119, 94, 1);
+    background: transparent;
+}
+.accordion .accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(81, 119, 94, 0.9);
+}
+.custom-red-icon {
+    color: red;
 }

@@ -5,13 +5,13 @@ import { MunicipalidadMochaComponent } from './components/municipalidad/municipa
 import { LeydetransparenciaComponent } from './components/transparencia/leydetransparencia/leydetransparencia.component';
 import { TrasnparenciaAnioComponent } from './components/transparencia/trasnparencia-anio/trasnparencia-anio.component';
 import { UltimasNoticiasComponent } from './components/comunicacion/ultimas-noticias/ultimas-noticias.component';
-import { GaleriaImagenesComponent } from './components/comunicacion/galeria-imagenes/galeria-imagenes.component';
 import { DirectorioTelefonicoComponent } from './components/contacto/directorio-telefonico/directorio-telefonico.component';
-import { HorarioAtencionComponent } from './components/contacto/horario-atencion/horario-atencion.component';
 import { QuejasYSugerenciasComponent } from './components/servicios/quejas-y-sugerencias/quejas-y-sugerencias.component';
 import { EmprendimientosComponent } from './components/servicios/emprendimientos/emprendimientos.component';
 import { TransportesComponent } from './components/servicios/transportes/transportes.component';
 import { AlcaldeComponent } from './components/municipalidad/alcalde/alcalde.component';
+import { UbicacionComponent } from './components/contacto/ubicacion/ubicacion.component';
+import { RendicionCuentasComponent } from './components/rendicion-cuentas/rendicion-cuentas.component';
 
 export const routes: Routes = [
     { path: "Inicio", component: HomeComponent },
@@ -28,11 +28,11 @@ export const routes: Routes = [
     { path: "transportes", component: TransportesComponent },
     //Comunicacion
     { path: "ultimas-noticias", component: UltimasNoticiasComponent },
-    { path: "galeria-imagenes", component: GaleriaImagenesComponent },
     //Contacto
     { path: "directorio-telefonico", component: DirectorioTelefonicoComponent },
-    { path: "horario-de-atencion", component: HorarioAtencionComponent },
-
+    { path: "ubicacion", component: UbicacionComponent },
+    //rendicion de cuentas
+    { path: "rendicion-de-cuentas", component: RendicionCuentasComponent },
 
     { path: "", redirectTo: "/Inicio", pathMatch: "full" }
 ];

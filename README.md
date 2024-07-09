@@ -1,7 +1,7 @@
 # Trabajo fin de Máster
 
 ## Descripción
-Este proyecto es una aplicación web desarrollada en Angular para el rediseño de las interfaces de usuario del sitio web del GAD Municipalidad de Mocha. 
+Este proyecto es una aplicación web desarrollada en Angular y Bootstrap para el rediseño de las interfaces de usuario del sitio web del GAD Municipalidad de Mocha. 
 Incluye funcionalidades como directorio telefónico, horario de atención, noticias, información del alcalde, transparencia y servicios ofrecidos.
 
 ## Tabla de Contenidos
@@ -17,10 +17,10 @@ Sigue estos pasos para instalar y configurar el proyecto:
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/usuario/proyecto-municipalidad.git
+git clone https://github.com/arielptiban/appTFM.git
 
 # Entrar al directorio del proyecto
-cd proyecto-municipalidad
+cd appTFM
 
 # Instalar dependencias
 npm install

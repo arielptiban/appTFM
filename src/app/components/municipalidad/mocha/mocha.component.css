@@ -115,57 +115,6 @@
     animation-delay: 1;
 }
 
-/* @media (min-width: 481px) and (max-width: 767px) {
-
-
-    .timelineInfo {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .timelineInfo:nth-child(odd) {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-    .timelineInfo .col-md-4 {
-        flex-basis: calc(33.33% - 10px);
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .timeline-item-content {
-        padding: 20px;
-        text-align: left; 
-    }
-
-    .timeline-item-content h4 {
-        margin-top: 10px;
-        font-size: 18px;
-    }
-
-    .timeline-item-content p {
-        font-size: 14px; 
-        line-height: 1.5;
-    }
-
-    .timeline-item-content img {
-        display: none;
-    }
-
-    .timeline-item-content.anio {
-        font-size: 20px;
-        opacity: 0.5;
-        transform: rotate(90deg);
-        transform-origin: center;
-        white-space: nowrap;
-        background-color: transparent; 
-        padding: 0; 
-        margin-bottom: 0; 
-        order: -1; 
-    }
-} */
 @media (max-width: 767px) {
 
     .timeline-item-content img{
