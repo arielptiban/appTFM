@@ -74,7 +74,8 @@ El proyecto utiliza las siguientes tecnologías:
 
 ## Despliegue
 
-Este proyecto está desplegado en Firebase para su acceso público. Puedes visitar la aplicación en [X](https://gad-mocha-front-end.web.app/Inicio)
+Este proyecto está desplegado en Firebase para su acceso público. Puedes visitar la aplicación en 
+- [X] https://gad-mocha-front-end.web.app/Inicio
 
 ## Autor
 - [x] Ariel Tibán Chito | arielptiban@gmail.com
